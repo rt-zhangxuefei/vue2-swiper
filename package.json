@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "a slider component based on vue2",
   "author": "zhangxuefei",
-  "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
@@ -55,7 +54,9 @@
     "webpack": "^2.6.1",
     "webpack-dev-middleware": "^1.10.0",
     "webpack-hot-middleware": "^2.18.0",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1"
   },
   "engines": {
     "node": ">= 4.0.0",
