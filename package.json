@@ -7,6 +7,7 @@
     "email": "mszhangxuefei@qq.com",
     "blog": "http://zhangxuefei.size"
   },
+  "license": "MIT",
   "main": "src/components/slider.vue",
   "scripts": {
     "dev": "node build/dev-server.js",
