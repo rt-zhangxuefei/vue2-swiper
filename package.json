@@ -2,7 +2,12 @@
   "name": "vue2-slider",
   "version": "1.0.0",
   "description": "a slider component based on vue2",
-  "author": "zhangxuefei",
+  "author": {
+    "name": "zhangxuefei",
+    "email": "mszhangxuefei@qq.com",
+    "blog": "http://zhangxuefei.size"
+  },
+  "main": "src/components/slider.vue",
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
