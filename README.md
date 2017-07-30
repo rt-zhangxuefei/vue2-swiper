@@ -1,21 +1,39 @@
 # vue2-slider
 
-> a slider component based on vue2
+> it is a usefull slider component based on vue2
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+# 立即使用（How to use)
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+<template>
+  <div>
+    <slider>
+      <div v-for="(item,index) in data" :key="index">
+        <a :href="item.linkUrl">
+          <img :src="item.picUrl"></img>
+        </a>
+      </div>
+    </slider>
+  </div>
+</template>
+```
+# 参数（Options）
+```
+  props: {
+    loop: {
+      type: Boolean,
+      default: true
+    },
+    autoPlay: {
+      type: Boolean,
+      default: true
+    },
+    interval: {
+      type: Number,
+      default: 4000
+    },
+    speed: {
+      type: Number,
+      default: 500
+    }
+  }
+```
