@@ -52,13 +52,9 @@ export default {
 }
 </script>
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-}
-
-#app {
-  position: relative
-}
+<style lang="stylus">
+  *
+    margin:0
+    padding:0
 </style>
+
