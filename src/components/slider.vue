@@ -51,6 +51,31 @@ export default {
         this._autoPlay()
       }
     }, 20)
+
+    window.addEventListener('resize', () => {
+      this.resizeTimer = setTimeout(() => {
+        if (!this.sliderItems) {
+          return
+        }
+        let width = 0
+        if (this.$refs.slider) {
+          this.sliderWidth = this.$refs.slider.clientWidth
+        }
+        let childs = this.$refs.sliderWrap.children
+        for (let i = 0; i < childs.length; i++) {
+          let child = childs[i]
+          child.style.width = this.sliderWidth + 'px'
+          width += this.sliderWidth
+        }
+
+        if (this.loop) {
+          width += this.sliderWidth * 2
+          this.slide(this.currentIndex, true)
+        }
+
+        this.$refs.sliderWrap.style.width = width + 'px'
+      }, 300)
+    })
   },
   activated() {
     if (this.autoPlay && this.loop) {
