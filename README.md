@@ -1,10 +1,9 @@
 # vue2-slider
 
-> it is a usefull slider component based on vue2
-> 基于vue2.x实现的一个焦点图组件，提供基本的自动播放，点击跳转，无限循环滑动功能
+> it is a usefull slider component based on vue2<br/>基于vue2.x实现的一个焦点图组件，提供基本的自动播放，点击跳转，无限循环滑动功能
 
 # 立即使用（How to use)
-```
+```html
 <template>
   <div>
     <slider>
@@ -18,7 +17,7 @@
 </template>
 ```
 # 参数（Options）
-```
+```javascript
   props: {
     loop: {
       type: Boolean,
@@ -38,3 +37,5 @@
     }
   }
 ```
+# License
+[The MIT License](http://opensource.org/licenses/MIT)
