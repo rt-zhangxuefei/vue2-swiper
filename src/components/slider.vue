@@ -10,6 +10,13 @@
 </template>
 <script type="text/ecmascript-6">
 export default {
+  created() {
+    this.sliderWidth = 0
+    this.startTranslate = 0
+    this.delta = 0
+    this.dragging = false
+    this.startPos = null
+  },
   props: {
     loop: {
       type: Boolean,
@@ -33,17 +40,10 @@ export default {
       currentIndex: 0,
       translateX: 0,
       transitionDuration: 0,
-      startPos: null,
-      sliderItems: [],
-      sliderWidth: 0,
-      startTranslate: 0,
-      delta: 0,
-      dragging: false
+      sliderItems: []
     }
   },
-  components: {
 
-  },
   mounted() {
     setTimeout(() => {
       this._initSlider()
