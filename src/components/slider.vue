@@ -10,6 +10,7 @@
 </template>
 <script type="text/ecmascript-6">
 export default {
+  name: "slider",
   created() {
     this.sliderWidth = 0
     this.startTranslate = 0
