@@ -4,7 +4,7 @@
 
 # 立即使用（How to use)
 > 引入src/components/slider.vue组件<br/>
-> 如果点击没有跳转，则不需要嵌套a标签进去
+> 如果没有链接，则不需要嵌套a标签
 ```html
 <template>
   <div>
@@ -18,7 +18,7 @@
   </div>
 </template>
 ```
-or without link
+or need not any link
 ```html
 <template>
   <div>
