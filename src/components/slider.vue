@@ -139,7 +139,10 @@ export default {
         this.prev()
       }
       if (Math.abs(this.delta) < 15) {
-        e.target.parentElement.click()
+        let target = e.target.parentElement
+        if (target.tagName.toUpperCase() === 'A') {
+          target.click()
+        }
       }
       document.removeEventListener('touchmove', this._onTouchMove)
       document.removeEventListener('touchend', this._onTouchEnd)
