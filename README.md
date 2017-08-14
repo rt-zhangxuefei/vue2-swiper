@@ -4,6 +4,7 @@
 
 # 立即使用（How to use)
 > 引入src/components/slider.vue组件
+> 如果点击没有跳转，则不需要嵌套a标签进去
 ```html
 <template>
   <div>
