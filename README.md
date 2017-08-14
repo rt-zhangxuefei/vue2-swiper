@@ -3,7 +3,7 @@
 > it is a usefull slider component based on vue2<br/>基于vue2.x实现的一个焦点图组件，提供基本的自动播放，点击跳转，无限循环滑动功能
 
 # 立即使用（How to use)
-> 引入src/components/slider.vue组件
+> 引入src/components/slider.vue组件<br/>
 > 如果点击没有跳转，则不需要嵌套a标签进去
 ```html
 <template>
@@ -18,6 +18,19 @@
   </div>
 </template>
 ```
+or without link
+```html
+<template>
+  <div>
+    <slider>
+      <div v-for="(item,index) in data" :key="index">
+          <img :src="item.picUrl"></img>
+      </div>
+    </slider>
+  </div>
+</template>
+```
+
 # 参数（Options）
 ```javascript
   props: {
